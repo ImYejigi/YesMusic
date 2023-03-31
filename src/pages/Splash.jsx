@@ -1,31 +1,37 @@
 import styled from 'styled-components';
-import Button from '../components/common/Button';
-import Header from '../components/common/Header';
+import ButtonComp from '../components/common/Button';
+import HeaderComp from '../components/common/Header';
 
 export default function Splash(props){
     return(
-        <>
-            <Header />
+        <Root>
+            <HeaderComp />
                 <Content>
                     <Login>
-                        <Button left="16px" color='#ffffff'>
+                        <ButtonComp left="16px" color='#ffffff'>
                             <Font>로그인</Font>
-                        </Button>
+                        </ButtonComp>
                     </Login>
                     <SignUp>
-                        <Button left ="192px;" color='transparent' >
+                        <ButtonComp left ="192px;" color='transparent' >
                             <Font color='#FFFFFF'>회원가입</Font>
-                        </Button>
+                        </ButtonComp>
                     </SignUp>
                 </Content>
-        </>
+        </Root>
     )
     
 }
 
+const Root = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
 const Content = styled.div`
-    dispaly: flex;
+    display: flex;
     flex: 1;
+    align-items: flex-end;
 `;
 
 const Login = styled.div`
