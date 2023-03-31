@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import Splash from './pages/Splash';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Splash/>
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
