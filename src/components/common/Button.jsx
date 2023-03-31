@@ -15,7 +15,6 @@ const CommonButton = styled.button`
 const Button = ({ props }) => {
   return (
       <CommonButton {...props?.color} >
-        {props.children && props.children}
         </CommonButton>
   );
 }
