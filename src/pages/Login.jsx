@@ -1,25 +1,46 @@
 import styled from 'styled-components';
 import ButtonComp from '../components/common/Button';
 import HeaderComp from '../components/common/Header';
+import InputFliedComp from '../components/common/InputFiled';
 import { useNavigate } from 'react-router-dom';
 
 
 
 export default function Login(props){
     const navigate = useNavigate();
+    
     return(
         <Root>
         <HeaderComp />
             <Content>
                 <Loging>
-                    <ButtonComp  color="#ffffff" content='로그인' onClick={()=>navigate("/login")}/>
+                    <InputFliedComp type='text'placeholder='아이디'></InputFliedComp>
+                    <InputFliedComp type='password' placeholder='비밀번호'></InputFliedComp>
+                    <ButtonComp  color="#BB6BD9" content='로그인' onClick={()=>navigate("/login")} fontColor="#ffffff"/>
+                    <FindIdPw>
+                        <FindIdPwBtn>아이디찾기</FindIdPwBtn>
+                        <FindIdPwBtn>비밀번호찾기</FindIdPwBtn>
+                    </FindIdPw>
                 </Loging>
-                <ButtonComp />
+               
             </Content>
     </Root>
     )
 }
+const FindIdPw = styled.div`
+    display : flex;
+    justify-content : space-between;
+`;
 
+const FindIdPwBtn = styled.button`
+    display : flex;
+    text-decoration : none;
+    color : black;
+    border : none;
+    outline : none;
+    justify-content: space-between;
+
+`;
 
 const Root = styled.div`
     display: flex;
@@ -27,12 +48,6 @@ const Root = styled.div`
     max-width: 720px ;
     margin: 0 auto;
 
-`;
-const IdPwText = styled.div`
-    display : flex;
-    flex : 1;
-    justify-content : center;
-    
 `;
 
 const Content = styled.div`
@@ -45,7 +60,8 @@ const Content = styled.div`
 const Loging = styled.div`
     display : flex;
     flex : 1;
-    justify-content : center;
+    flex-direction : column;
+    align-items : center;
     
 `;
 
