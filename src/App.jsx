@@ -6,7 +6,8 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Splash/>} />
-      <Route path='/login' Component={<Login/>} />
+      <Route path='/login' element={<Login/>} />
+      
     </Routes>
   );
 };

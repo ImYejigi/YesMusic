@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 import ButtonComp from '../components/common/Button';
 import HeaderComp from '../components/common/Header';
+import { useNavigate } from 'react-router-dom';
+
+
 
 export default function Splash(props){
+    const navigate = useNavigate();
+    
+    
+
     return(
         <Root>
             <HeaderComp />
                 <Content>
                     <Login>
-                        <ButtonComp left="16px" color='#ffffff'>
-                            <Font>로그인</Font>
-                        </ButtonComp>
+                        <ButtonComp  color="#ffffff" content='로그인' onClick={()=>navigate("/login")}/>
                     </Login>
                     <SignUp>
-                        <ButtonComp left ="192px;" color='transparent' >
-                            <Font color='#FFFFFF'>회원가입</Font>
-                        </ButtonComp>
+                        <ButtonComp  color='transparent' content='회원가입'/>
                     </SignUp>
                 </Content>
         </Root>
@@ -23,39 +26,34 @@ export default function Splash(props){
     
 }
 
+
+
+
+
 const Root = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 720px ;
+    margin: 0 auto;
+
 `;
 
 const Content = styled.div`
     display: flex;
-    flex: 1;
     align-items: flex-end;
+    height: calc(100vh - 470px);
+    
 `;
 
 const Login = styled.div`
-    display: flex;
-    flex: 1;
+    display : flex;
+    flex : 1;
+    justify-content : center;
+    
 `;
 
 const SignUp = styled.div`
     display: flex;
     flex: 1;
+    justify-content : center;
 `;
-
-const Font = styled.p`   
-    width: 37px;
-    height: 15px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: ${props => props.color};
-`
