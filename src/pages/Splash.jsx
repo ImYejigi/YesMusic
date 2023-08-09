@@ -15,10 +15,10 @@ export default function Splash(props){
             <HeaderComp />
                 <Content>
                     <Login>
-                        <ButtonComp  color="#ffffff" content='로그인' onClick={()=>navigate("/login")}/>
+                        <ButtonComp  color="#ffffff" content='로그인' onClick={()=>navigate("/Login")}/>
                     </Login>
                     <SignUp>
-                        <ButtonComp  color='transparent' content='회원가입'/>
+                        <ButtonComp  color='transparent' content='회원가입' onClick={()=>navigate("/SignUp")}/>
                     </SignUp>
                 </Content>
         </Root>

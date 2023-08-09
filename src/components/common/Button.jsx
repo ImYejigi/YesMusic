@@ -10,7 +10,7 @@ const CommonButton = styled.button`
     border-radius: 6px;
     text-align : center;
     align-items : center;
-    
+    margin : 15px;
     
 
 `;

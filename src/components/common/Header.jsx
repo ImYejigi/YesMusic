@@ -7,7 +7,7 @@ const HeaderContent = styled.div`
     height : 370px;
     width : 100%;
     justify-content: center;
-    align-items : flex-end;
+    align-items : flex-start;
 `;
 
 const Center = styled.div`

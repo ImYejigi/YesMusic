@@ -16,13 +16,12 @@ export default function Login(props){
                 <Loging>
                     <InputFliedComp type='text'placeholder='아이디'></InputFliedComp>
                     <InputFliedComp type='password' placeholder='비밀번호'></InputFliedComp>
-                    <ButtonComp  color="#BB6BD9" content='로그인' onClick={()=>navigate("/login")} fontColor="#ffffff"/>
+                    <ButtonComp  color="#BB6BD9" content='로그인' onClick={()=>navigate("/MainPage")} fontColor="#ffffff"/>
                     <FindIdPw>
                         <FindIdPwBtn>아이디찾기</FindIdPwBtn>
                         <FindIdPwBtn>비밀번호찾기</FindIdPwBtn>
                     </FindIdPw>
-                </Loging>
-               
+                </Loging>       
             </Content>
     </Root>
     )
