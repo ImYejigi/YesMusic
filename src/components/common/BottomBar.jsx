@@ -32,15 +32,24 @@ const BottomBar = (props) => {
     return(
         <BottomBMenu>
             <IconMenu>
-                <img src={HomeImg}/>
-                <img src={Magnifier}/>
-                <img src={Speech}/>
-                <img src={PersonImg}/>
+                <Images>
+                    <img src={HomeImg}/>
+                    <img src={Magnifier}/>
+                    <img src={Speech}/>
+                    <img src={PersonImg}/>
+                </Images>
             </IconMenu>
         </BottomBMenu>
         
     )
 }
 
+const Images = styled.div`
+    display : flex;
+    height : 50px;
+    width : 50px;
+    align-items : center;
+    margin-left : 20px;
+`;
 
 export default BottomBar;

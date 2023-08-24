@@ -19,7 +19,7 @@ const Font = styled.span`
     line-height : 15px;
     align-items : center;
     text-align : center;
-    color : ${props => props.fontColor}
+    color : ${props => props.fontColor};
    
 `;
 
