@@ -24,11 +24,15 @@ const Nav = styled.div`
     display :felx;
     font-size : 50px;
     font-weight : bold;
-    
+    margin : 20px;
 `;
 
 const Articles = styled.div `
     display :flex;
+    margin : 20px;
+    & > img {
+        width : 100%;
+    }
 `;
 
 
@@ -36,7 +40,9 @@ const MusicName = styled.div`
     display :flex;
     font-size : 30px;
     font-weight : bold;
-   
+    height : 300px;
+    align-items : center;
+    justify-content : center;
 `;
 const Root = styled.div`
     display : flex;

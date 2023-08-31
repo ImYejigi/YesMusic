@@ -15,26 +15,27 @@ const TopBar = (props) => {
 const TopMenu = styled.div`
     display : flex;
     height : 110px;
+    width : 100%;
     background-color : #D9D9D9;
-
+    
 `;
 
 const Images = styled.div`
     display : flex;
-    height : 100px;
-    width : 100px;
     align-items : center;
     margin-left : 20px;
 `;
 
 const TextCommon = styled.span`
-    font-size : 18px ;
+    display : flex;
+    font-size : 20px;
     font-weight : bold;
     line-height : 15px;
-    align-items : center;
     text-align : center;
     text-transform : uppercase;
     color : ${props => props.fontColor};
+    align-items : center;
+    margin : auto;
 `;
 
 
