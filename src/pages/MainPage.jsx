@@ -21,7 +21,7 @@ export default function MainPage(props){
 }
 
 const Nav = styled.div`
-    display :felx;
+    display :flex;
     font-size : 50px;
     font-weight : bold;
     margin : 20px;

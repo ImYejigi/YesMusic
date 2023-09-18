@@ -12,7 +12,9 @@ export default function Search(props){
         <Root>
         <TopBarComp fontColor="#000000" content='search'></TopBarComp>
         <Nav>찾고 싶은 음악을 검색하세요!</Nav>
-        <BottomBarComp></BottomBarComp>
+        <SearchBar></SearchBar>
+        <BottomBarComp/>
+
         </Root>
         
     );
@@ -26,9 +28,17 @@ const Root = styled.div`
 `;
 
 const Nav = styled.div`
-    display :felx;
+    display :flex;
     font-size : 40px;
     font-weight : bold;
     margin : 20px;
     
 `;
+const SearchBar = styled.div`
+    display : flex;
+    align-items : center;
+    height : 50px;
+    max-width : 720px;
+    margin : 20px;
+    border : 3px solid black;
+`

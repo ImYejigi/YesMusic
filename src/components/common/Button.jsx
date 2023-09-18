@@ -27,7 +27,7 @@ const Button = (props) => {
 
   return (
 
-      <CommonButton onClick={props.onClick } color={props.color}  >
+      <CommonButton onClick={props.onClick } color={props.color}>
       <Font fontColor={props.fontColor}>{props.content}</Font>
       </CommonButton>
   );
