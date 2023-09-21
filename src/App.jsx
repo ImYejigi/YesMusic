@@ -4,6 +4,7 @@ import Splash from './pages/Splash';
 import SignUp from './pages/SignUp';
 import MainPage from './pages/MainPage';
 import Search from './pages/Search';
+import Mypage from './pages/MyPage';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Route path='/SignUp' element={<SignUp/>}/>
       <Route path='/MainPage' element={<MainPage/>}/>
       <Route path='/Search' element={<Search/>}/>
+      <Route path='/MyPage' element={<Mypage/>}/>
     </Routes>
   );
 };

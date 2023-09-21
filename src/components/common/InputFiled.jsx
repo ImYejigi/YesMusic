@@ -9,10 +9,22 @@ const InputStyle = styled.input`
 
 `;
 
+
+
 const InputFlied = (props) => {
-   return(
-    <InputStyle type={props.type} placeholder={props.placeholder}></InputStyle>
+    
+
+   
+   
+    return(
+    <>
+        <InputStyle type={props.type} placeholder={props.placeholder}></InputStyle>
+    </>
+
    )
   }
 
+
+
+  
   export default InputFlied;

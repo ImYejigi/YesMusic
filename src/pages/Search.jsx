@@ -1,7 +1,16 @@
 import BottomBarComp from "../components/common/BottomBar";
 import TopBarComp from "../components/common/TopBar";
 import styled from "styled-components";
+import InputFlied from "../components/common/InputFiled";
 import { useNavigate } from 'react-router-dom';
+
+// const searchList = () => {
+//     const filtered = sampleData.filter((itemList) => {
+// return itemList.name.toUpperCase().includes(userInput.toUpperCase());
+
+//     })
+// }
+
 
 
 
@@ -12,7 +21,7 @@ export default function Search(props){
         <Root>
         <TopBarComp fontColor="#000000" content='search'></TopBarComp>
         <Nav>찾고 싶은 음악을 검색하세요!</Nav>
-        <SearchBar></SearchBar>
+        <InputFlied></InputFlied>
         <BottomBarComp/>
 
         </Root>
@@ -34,11 +43,3 @@ const Nav = styled.div`
     margin : 20px;
     
 `;
-const SearchBar = styled.div`
-    display : flex;
-    align-items : center;
-    height : 50px;
-    max-width : 720px;
-    margin : 20px;
-    border : 3px solid black;
-`

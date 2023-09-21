@@ -5,7 +5,7 @@ import PersonImg from '../../assets/images/free-icon-person-2815428.png'
 import Speech from '../../assets/images/free-icon-speech-bubble-2043.png'
 import Magnifier from '../../assets/images/free-icon-magnifier-2319177.png'
 import { Link } from 'react-router-dom';
-import Search from '../../pages/Search';
+
 
 
 
@@ -15,10 +15,10 @@ const BottomBar = (props) => {
         <BottomBMenu>
             <IconMenu>
                 <Images>
-                    <ImgItems><img src={HomeImg}/></ImgItems>            
+                    <ImgItems><Link to='/MainPage'><img src={HomeImg}/></Link></ImgItems>            
                     <ImgItems><Link to='/Search'><img src={Magnifier}/></Link></ImgItems>
-                    <ImgItems><img src={Speech}/></ImgItems>
-                    <ImgItems><img src={PersonImg}/></ImgItems>
+                    <ImgItems><Link to='/'><img src={Speech}/></Link></ImgItems>
+                    <ImgItems><Link to='/MyPage'><img src={PersonImg}/></Link></ImgItems>
                 </Images>
             </IconMenu>
         </BottomBMenu>
